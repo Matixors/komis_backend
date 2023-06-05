@@ -12,7 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class UpdateProduct extends AbstractType
+class UpdateProductType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -22,7 +22,6 @@ class UpdateProduct extends AbstractType
             ->add('location', TextType::class)
             ->add('price', IntegerType::class)
             ->add('description', TextareaType::class)
-            ->add('registerNumber', TextType::class)
             ->add('productionYear', IntegerType::class)
             ->add('colour', TextType::class)
             ->add('crashed', CheckboxType::class, [

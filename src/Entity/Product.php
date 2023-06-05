@@ -29,7 +29,7 @@ class Product
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $description = null;
 
-    #[ORM\Column(length: 15)]
+    #[ORM\Column(length: 15, unique: true)]
     private ?string $registerNumber = null;
 
     #[ORM\Column(nullable: true)]

@@ -7,3 +7,15 @@ add_car:
     path: /api/addCar
     controller: App\Controller\ProductController::postProduct
     methods: POST
+get_cars:
+    path: /api/getCars
+    controller: App\Controller\ProductController::getAllCars
+    methods: GET
+update_car:
+    path: /api/updateCar/{register}
+    controller: App\Controller\ProductController::updateCar
+    methods: PUT
+delete:
+    path: /api/deleteCar/{register}
+    controller: App\Controller\ProductController::deleteCar
+    methods: DELETE
